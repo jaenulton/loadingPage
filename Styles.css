@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loading {
+   max-width: 60%;
+   line-height: 1.5;
+  font-family: 'Montserrat Alternates', sans-serif;
+   font-size: 2.2rem;
+   font-weight: bold;
+   text-align: center;
+}
+
+.loading__dev {
+  font-weight: normal;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.1rem;
+  color: rgba(189,189,189 ,1);
+  margin: 0.7rem 0 2rem 0;
+  display: block;
+}
+
+.loading__ani {
+  width: 48px;
+  height: 48px;
+  border:  15px solid rgba(229, 105, 4 ,1);
+  border-left-color: rgba(229, 105, 4,.6);
+  border-top-color: rgba(229,105, 4,.57);
+  border-radius: 55%;
+  display: inline-block;
+  animation: rotate 1150ms infinite linear;
+}
+
+.loading__srclink {
+    font-weight: normal;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 0.7rem;
+    color: rgba(189,189,189 ,1);
+    margin: 0.2rem 0 .2rem 0;
+    display: block;
+  }
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn)
+  }
+}
